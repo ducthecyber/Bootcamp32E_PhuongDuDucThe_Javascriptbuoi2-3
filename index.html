@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bài tập JavaScript 2-3</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <h3>Bài tập 1: Tính tiền lương nhân viên</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-25">
+      <div class="card-header bg-danger text-light font-weight-bold text-center">
+        Tính tiền lương
+      </div>
+      <div class="card-body">
+        <div>
+          <p>Salary per day: 100,000 VND
+            <span id="salary"></span>
+          </p>
+        </div>
+        <div class="form-group">
+          <p class="mt-2">Working Days</p>
+          <input id="day" class="form-control" placeholder="Your working days"/>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <button class="btn btn-success" id="btnIncome">Calculate</button>
+          <p class="mt-2">Employee Income</p>
+          <h3 id="income"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5"></div>
+  <h3>Bài tập 2: Tính giá trị trung bình 5 số thực</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-25">
+      <div class="card-header bg-secondary text-light font-weight-bold text-center">
+        Tính giá trị trung bình 5 số thực
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <p>Số thực thứ 1</p>
+          <input type="number" id="soThuc1" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Số thực thứ 2</p>
+          <input type="number" id="soThuc2" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Số thực thứ 3</p>
+          <input type="number" id="soThuc3" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Số thực thứ 4</p>
+          <input type="number" id="soThuc4" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Số thực thứ 5</p>
+          <input type="number" id="soThuc5" class="form-control"/>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <button id="btnTrungBinh" class="btn btn-success">Tính</button>
+          <p class="mt-2">Giá trị trung bình 5 số thực</p>
+          <h3 id="trungBinh"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5"></div>
+  <h3>Bài tập 3: Quy đổi tiền USD sang tiền Việt</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-25">
+      <div class="card-header bg-primary text-light font-weight-bold text-center">
+        <p>Quy đổi tiền</p>
+      </div>
+      <div class="card-body">
+        <div>
+          <p>Tỷ giá USD/VND: 1 USD = 23,500 VND
+            <span id="exchange"></span>
+          </p>
+        </div>
+        <div class="form-group">
+          <p class="mt-2">Số tiền USD</p>
+          <input id="quantity" class="form-control" placeholder="Nhap so tien USD" />
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <button class="btn btn-success" id="btnMoney">Tính</button>
+          <p class="mt-2">Số tiền sau quy đổi</p>
+          <h3 id="money"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5"></div>
+  <h3>Bài tập 4: Tính chu vi, diện tích hình chữ nhật</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-25">
+      <div class="card-header bg-warning">
+        <p>Tính Chu Vi, Diện Tích hình chữ nhật</p>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <p>Chiều dài (cm)</p>
+          <input type="number" id="chieuDai" class="form-control" />
+        </div>
+        <div class="form-group">
+          <p>Chiều rộng (cm)</p>
+          <input type="number" id="chieuRong" class="form-control" />
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <button class="btn btn-success" id="btnChuNhat">Tính</button>
+          <p class="mt-2">Chu vi</p>
+          <h3 id="chuVi"></h3>
+          <p class="mt-2">Diện tích</p>
+          <h3 id="dienTich"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5"></div>
+  <h3>Bài tập 5: Tính tổng 2 ký số</h3>
+  <div class="d-flex justify-content-center">
+    <div class="card w-25">
+      <div class="card-header bg-info text-center text-light font-weight-bold">
+        <p>Tính tổng 2 ký số </p>
+      </div>
+      <div class="card-body">
+        <div class="form-input">
+          <p>Số có 2 chữ số</p>
+          <input id="numNum" class="form-control" placeholder="Nhap so co 2 chu so" />
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="text-center">
+          <button class="btn btn-success" id="btnTong">Tính</button>
+          <p class="mt-2">Tổng ký số</p>
+          <h3 id="tong"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
